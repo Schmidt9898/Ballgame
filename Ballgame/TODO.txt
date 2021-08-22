@@ -1,0 +1,42 @@
+Amikor kezdem ezt a listát addigra sok alap dolog már készvan.
+Néha angol néha hungarian
+
+Make mosue buttons part of the setting file
+
+Rename weapon interface
+
+Make UI
+-startmenu
+-settings
+-select sceen
+
+Make player status
+-health,counts,display on hud
+-save and load these
+
+Make jump and groundjeck
+
+Modell some things
+-2 gun triangle and square
+-modell 3 box with different color and simbol
+-make simbols
+
+Make shader for primitive skins
+
+Build simple map
+-use blender
+
+Make some sounds
+-guns 
+wheel
+jump
+hit
+
+Make targets
+
+Make gun better
+-reload
+-swich
+-in the file
+
+make prefabs

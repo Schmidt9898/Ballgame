@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Settings_Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sensitivity>100</sensitivity>
+  <sound_Master>1</sound_Master>
+  <sound_enviroment>1</sound_enviroment>
+  <sound_music>1</sound_music>
+  <keyMaps>
+    <string>slot1</string>
+    <string>slot2</string>
+    <string>slot3</string>
+    <string>slot4</string>
+    <string>reload</string>
+    <string>inventory</string>
+    <string>forward</string>
+    <string>backward</string>
+    <string>right</string>
+    <string>left</string>
+    <string>jump</string>
+  </keyMaps>
+  <defaults>
+    <KeyCode>Alpha1</KeyCode>
+    <KeyCode>Alpha2</KeyCode>
+    <KeyCode>Alpha3</KeyCode>
+    <KeyCode>Alpha4</KeyCode>
+    <KeyCode>R</KeyCode>
+    <KeyCode>I</KeyCode>
+    <KeyCode>W</KeyCode>
+    <KeyCode>S</KeyCode>
+    <KeyCode>D</KeyCode>
+    <KeyCode>A</KeyCode>
+    <KeyCode>Space</KeyCode>
+  </defaults>
+</Settings_Data>
