@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet_flying : MonoBehaviour, Poolable
+public class rectanggunprojectile : MonoBehaviour, Poolable
 {
     Vector3 nextpos;
     [Header("Speed of the projectile. u/s")]
@@ -10,31 +10,20 @@ public class Bullet_flying : MonoBehaviour, Poolable
     [Header("Layers that can efect the bullet.")]
     public LayerMask hitlayer;
     [Header("Name in the object pool.")]
-    public string mypoolname = "bullet0";//make this automatic from a table
+    public string mypoolname = "bullet1";//make this automatic from a table
     [Header("Damage when hit.")]
     public float damage = 100;
     float t = 0f;
     [Header("Bullet lifetime.")]
     public float lifetime = 3f;
-
-    //Visuals
-    //public GameObject hiteffect;
-    // sounds, marker, stat change 
-
-
-
     void Start()
     {
- 
-
-
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Bulet life time
         if (Time.time > t + 3)
         {
             poolmanagger.POOL.Disapear(mypoolname, this.gameObject);
@@ -44,22 +33,8 @@ public class Bullet_flying : MonoBehaviour, Poolable
         if (check())
         {
             transform.position = nextpos;
-            /* var targetrb = hit.collider.GetComponent<Rigidbody>();
-             if (targetrb != null)
-                 targetrb.AddForce(transform.forward * damage);
-             var _shotable = hit.collider.GetComponent<shotable>();
-             if (_shotable != null)
-                 _shotable.TakeShot(this.gameObject, damage);
+            poolmanagger.POOL.Disapear(mypoolname, this.gameObject);
 
-
-             var effect = Instantiate(hiteffect, hit.point, Quaternion.identity);
-             Destroy(effect, 0.5f);
-            */
-             poolmanagger.POOL.Disapear(mypoolname, this.gameObject);
-             //Destroy(this.gameObject);
-
-             //Debug.LogError("NEM jó");
-            
             Debug.Log("találat");
 
 
@@ -69,7 +44,9 @@ public class Bullet_flying : MonoBehaviour, Poolable
             transform.position = nextpos;
 
 
+
     }
+
 
     RaycastHit hit;
     bool check()
@@ -92,4 +69,6 @@ public class Bullet_flying : MonoBehaviour, Poolable
     {
         t = Time.time;
     }
+
+
 }

@@ -116,7 +116,7 @@ public class poolmanagger : MonoBehaviour
             {
                 var temppoolable = temp.GetComponent<Poolable>();
                 if (temppoolable != null)
-                    temppoolable.Reset();
+                    temppoolable.Reset_on_pool();
                 temp.transform.position = pos;
                 temp.transform.rotation = rot;
                 temp.SetActive(true);

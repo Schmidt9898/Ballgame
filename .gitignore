@@ -45,3 +45,5 @@ Ballgame/Assets/Samples/Cinemachine/*
 *.exr
 *.jpg
 *.json
+*.blend1
+*.prefab

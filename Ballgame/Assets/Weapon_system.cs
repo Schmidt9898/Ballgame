@@ -25,7 +25,7 @@ public class Weapon_system : MonoBehaviour
     //public Weapon_interface[] guns;
     //public int gun_id = -1;
 
-    public Weapon_interface selected_gun;
+    public Weapon_def selected_gun;
     public float camera_offset = 3f;
 
     void Start()
@@ -67,6 +67,10 @@ public class Weapon_system : MonoBehaviour
         else if (Input.GetMouseButtonUp(0))
         {
             selected_gun.release();
+        }
+        if (GameInputManager.GetKeyDown("reload"))
+        {
+            selected_gun.reload();
         }
         /*if(Input.GetKeyDown(KeyCode.F))
         {

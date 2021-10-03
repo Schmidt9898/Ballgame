@@ -6,7 +6,7 @@ public interface Poolable
 {
 
     
-    void Reset();
+    void Reset_on_pool();
     //void Activate();
     //void Deactivate();
     //GameObject GetItem();
